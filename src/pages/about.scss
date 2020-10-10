@@ -1,0 +1,63 @@
+.about-page {
+  padding: 20px;
+  display: flex;
+
+  .left-content img {
+    width: 500px;
+  }
+
+  .right-content {
+    margin-left: 16px;
+
+    .top-text {
+      height: 300px;
+      border-bottom: 1px solid #d5d5d5;
+      .title {
+        font-size: 24px;
+        color: #071607;
+        font-family: PingFangSC-Regular;
+        font-weight: 700;
+      }
+
+      .top-text-content {
+        display: flex;
+        margin-top: 12px;
+        font-size: 14px;
+        color: #071607;
+        font-weight: 600;
+
+        .left-text-content {
+          margin-right: 16px;
+        }
+
+        .left-text-content,
+        .right-text-content {
+          width: 400px;
+          line-height: 1.3;
+        }
+      }
+    }
+
+    .bottom-text {
+      .bottom-title {
+        font-family: PingFangSC-Medium;
+        font-size: 24px;
+        color: #071607;
+        margin-bottom: 13px;
+        margin-top: 9px;
+      }
+
+      .link-content {
+        color: #071607;
+        margin-bottom: 9px;
+        font-family: PingFangSC-Regular;
+      }
+
+      .wechat-code {
+        font-family: PingFangSC-Regular;
+        font-size: 8px;
+        color: #071607;
+      }
+    }
+  }
+}

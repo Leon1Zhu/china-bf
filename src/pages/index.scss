@@ -1,0 +1,155 @@
+.de-main-page {
+  padding: 60px 60px 0px 60px;
+  position: relative;
+
+  .all-de-card {
+    background: url("../imgs/first-1.png");
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 486px;
+
+    .all-card-detail {
+      width: 451px;
+      text-align: center;
+      margin: auto;
+      padding-top: 94px;
+
+      .detail-title {
+        font-family: PingFangSC-Semibold;
+        font-size: 26px;
+        color: #ffffff;
+        letter-spacing: 1.5px;
+        text-align: center;
+      }
+
+      .detail-content {
+        margin: 47px 0;
+        position: relative;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
+        z-index: 2;
+        .mask {
+          background: rgba(0, 0, 0, 0.4);
+          border-radius: 4px;
+          border-radius: 4px;
+          position: absolute;
+          width: 450px;
+          height: 78px;
+          top: 0px;
+          left: 0px;
+          z-index: -1;
+        }
+        .text {
+          padding: 10px 20px;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+
+  .first-class,
+  .second-class,
+  .third-class {
+    display: flex;
+    width: 100%;
+  }
+  .first-class {
+    margin-top: 48px;
+    margin-bottom: 20px;
+    .first-card-item {
+      width: 50%;
+      position: relative;
+      height: 350px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      transition: all 0.5s;
+      overflow: hidden;
+      background-position: center;
+      &:hover {
+        background-size: 115% 115%;
+      }
+
+      .card-content {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+
+        .item-content {
+          z-index: 2;
+          position: relative;
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          color: #ffffff;
+          line-height: 18px;
+          position: relative;
+          top: -14px;
+          padding: 5px 10px;
+          .mask {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 4px;
+            border-radius: 4px;
+            position: absolute;
+            width: 450px;
+            height: 49px;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+
+  .second-class {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    .second-card {
+      flex: 1;
+      height: 277px;
+      .top-content {
+        height: 200px;
+        overflow: hidden;
+      }
+
+      .bottom-content {
+        padding: 8px 12px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .third-class {
+    width: 100%;
+    display: flex;
+    .second-card {
+      flex: 1;
+      height: 277px;
+      .top-content {
+        overflow: hidden;
+        height: 223px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 17px;
+      }
+
+      .bottom-content {
+        padding: 8px 12px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .visit-content {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #071607;
+    text-align: right;
+    .visit-count {
+      color: #0f9eff;
+    }
+  }
+}
