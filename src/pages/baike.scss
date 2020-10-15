@@ -1,0 +1,78 @@
+.baike-page {
+  .top-content {
+    display: flex;
+
+    .right-content {
+      .right-cards-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        .mask-card {
+          margin-bottom: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .text-content {
+            font-family: PingFangSC-Medium;
+            font-size: 20px;
+            color: #ffffff;
+            line-height: 1.4;
+            text-align: center;
+          }
+        }
+
+        .mask-card:nth-child(odd) {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .bottom-content {
+      padding: 10px 30px;
+
+      .footer-title {
+        text-align: center;
+        font-family: PingFangSC-Regular;
+        font-size: 20px;
+        color: #071607;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      .footer-cards-list {
+        display: flex;
+
+        .mask-card:not(:last-child) {
+          margin-right: 16px;
+        }
+
+        .mask-card {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+
+          .text-content {
+            margin-bottom: 20px;
+            font-family: PingFangSC-Medium;
+            font-size: 14px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 18px;
+
+            .latinname-tips {
+              margin-top: 12px;
+              font-family: PingFangSC-Light;
+              font-size: 8px;
+              color: #ffffff;
+              text-align: center;
+              line-height: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

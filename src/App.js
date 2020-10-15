@@ -16,7 +16,7 @@ function App() {
 
         <Menu mode="horizontal">
           <Menu.Item key="baike">
-            <Link to="/about">蝶蛾百科</Link>
+            <Link to="/baike">蝶蛾百科</Link>
           </Menu.Item>
           <Menu.Item key="qingdan">蝶蛾清单</Menu.Item>
           <Menu.Item key="about">
