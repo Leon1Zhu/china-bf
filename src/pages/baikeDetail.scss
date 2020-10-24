@@ -1,0 +1,109 @@
+.baike-detail-content {
+  padding-right: 16px;
+  .top-content {
+    justify-content: space-between;
+
+    .search-input {
+      .ant-input-search {
+        border-radius: 0px;
+      }
+
+      .ant-input-suffix .anticon-search {
+        color: #999999;
+      }
+    }
+  }
+
+  .center-content {
+    border-top: 1px solid #d6d6d6;
+    margin-top: 12px;
+
+    .search-ke-content {
+      margin-top: 12px;
+
+      .top-type {
+        display: flex;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #071607;
+        line-height: 24px;
+        margin-bottom: 20px;
+
+        .all-type-text {
+          line-height: 32px;
+        }
+
+        .type-list-content {
+          min-width: 30px;
+          min-height: 20px;
+          flex: 1;
+
+          .ant-tag {
+            padding: 5px 8px;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .bottom-type-list {
+        border: 1px solid #d6d6d6;
+        padding: 12px;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .footer-content {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+
+    .bf-card {
+      width: 32%;
+      position: relative;
+      margin-right: 1%;
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+
+      .bf-bg-img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.baike-modal {
+  width: 40% !important;
+
+  .ant-modal-close {
+    display: none;
+  }
+  .ant-modal-body {
+    padding: 0px;
+
+    .anticon-close {
+      position: absolute;
+      right: -35px;
+      top: -24px;
+      cursor: pointer;
+      svg {
+        color: #ffffff;
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .bf-info-content {
+      padding: 12px 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .ant-modal-footer {
+    display: none;
+  }
+}

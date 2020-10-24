@@ -2,6 +2,18 @@
   .top-content {
     display: flex;
 
+    .left-menu {
+      padding-top: 21px;
+      border-right: 1px solid rgba(0, 0, 0, 0.5);
+      min-height: 600px;
+    }
+
+    .right-content {
+      padding-top: 21px;
+      margin-left: 16px;
+      flex: 1;
+    }
+
     .right-content {
       .right-cards-list {
         display: flex;

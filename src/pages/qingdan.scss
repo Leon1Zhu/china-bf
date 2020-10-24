@@ -1,0 +1,73 @@
+.qingdan-page {
+  padding-left: 400px;
+  .title {
+    margin-top: 30px;
+    font-family: PingFangSC-Regular;
+    font-size: 30px;
+    color: #071607;
+    margin-bottom: 12px;
+  }
+
+  .text {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #071607;
+    line-height: 20px;
+    max-width: 800px;
+  }
+
+  .text1,
+  .text2,
+  .text3,
+  .text4,
+  .text5 {
+    margin-bottom: 20px;
+  }
+
+  .btn.iconfont {
+    font-size: 50px;
+    display: inline-block;
+    margin-top: 40px;
+    color: #071607;
+    opacity: 0.6;
+    cursor: pointer;
+
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .iconzuojiantou {
+    margin-right: 36px;
+  }
+
+  .swiper-container {
+    width: 816px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    margin-top: 20px;
+
+    .swiper-slide {
+      width: 416px;
+
+      &:not(:last-child) {
+        img {
+          width: 400px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .swiper-button-prev {
+      position: absolute;
+    }
+
+    .swiper-button-next {
+      position: absolute;
+    }
+  }
+}

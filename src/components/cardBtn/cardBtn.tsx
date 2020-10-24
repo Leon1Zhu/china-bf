@@ -10,7 +10,6 @@ class Props {
 
 export function CardBtn(props: Props) {
   const { useBackground, onClick } = props;
-  console.log(useBackground);
   return (
     <Button
       className={`card-btn ${useBackground && "useBackground"}`}

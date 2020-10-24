@@ -1,0 +1,19 @@
+.App {
+  .main-page-img {
+    position: absolute;
+    z-index: 0;
+
+    img {
+      width: 210px;
+      margin-left: 44px;
+    }
+  }
+
+  .ant-menu-horizontal {
+    text-align: center;
+
+    .ant-menu-item-only-child:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
+}

@@ -22,11 +22,16 @@ function AboutPage() {
         <div className="bottom-text">
           <div className="bottom-title">有任何建议与意见,欢迎联系我们:</div>
 
-          <div className="link-content">联系电话： 13777777777</div>
-          <div className="link-content">电子邮箱: zephyrus168@aliyun.com</div>
+          <div className="link-content">
+            <i className="iconfont icondianhua"></i> 联系电话： 13777777777
+          </div>
+          <div className="link-content">
+            <i className="iconfont iconyoujian"></i>电子邮箱:
+            zephyrus168@aliyun.com
+          </div>
 
           <div className="wechat-code">
-            <img></img>
+            <img alt=""></img>
             <div> 欢迎扫码我们的小程序</div>
           </div>
         </div>
