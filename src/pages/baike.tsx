@@ -13,9 +13,9 @@ function BaikePage(props: any) {
 
   const { data } = useSWR(`${host}/getCatalog`);
 
-  const { data: showResult } = useSWR(
+  const { data: showResult } =  useSWR(
     () =>
-      `${host}/getSpeciesByLatinName?latinName=${searchConfig?.[0]?.latinName}`
+    searchConfig?.[0]?.latinName ? `${host}/getSpeciesByLatinName?latinName=${searchConfig?.[0]?.latinName}` : null
   );
 
   useEffect(() => {
