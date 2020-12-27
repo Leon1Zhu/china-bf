@@ -52,6 +52,25 @@
   .bottom-title-info {
     margin-top: 12px;
 
+    .picture-info {
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #323632;
+      margin: 10px 0;
+
+      .pic-top {
+        .user {
+          margin: 0 5px;
+        }
+
+        .time {
+          margin-left: 5px;
+        }
+
+        margin-bottom: 3px;
+      }
+    }
+
     .bf-type-breadcrumb {
       font-family: PingFangSC-Light;
       font-size: 14px;

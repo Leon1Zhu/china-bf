@@ -49,6 +49,20 @@
         border: 1px solid #d6d6d6;
         padding: 12px;
         border-radius: 2px;
+
+        .ant-checkbox-group-item {
+          width: 110px;
+          .ant-checkbox + span {
+            width: 92px;
+            overflow: hidden;
+            display: inline-block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            word-break: keep-all;
+            top: 6px;
+            position: relative;
+          }
+        }
       }
     }
   }

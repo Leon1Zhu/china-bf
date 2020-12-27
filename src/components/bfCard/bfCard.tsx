@@ -19,6 +19,37 @@ export const nameLoopList = [
   "species",
 ];
 
+function formatDate(date: any, format: any) {
+	if (!date) return;
+	if (!format)
+		format = "yyyy-MM-dd";
+	switch (typeof date) {
+	case "string":
+		date = new Date(date.replace(/-/, "/"));
+		break;
+	case "number":
+		date = new Date(date);
+		break;
+	}
+	if (!(date instanceof Date)) return;
+	var dict = {
+		"yyyy" : date.getFullYear(),
+		"M" : date.getMonth() + 1,
+		"d" : date.getDate(),
+		"H" : date.getHours(),
+		"m" : date.getMinutes(),
+		"s" : date.getSeconds(),
+		"MM" : ("" + (date.getMonth() + 101)).substr(1),
+		"dd" : ("" + (date.getDate() + 100)).substr(1),
+		"HH" : ("" + (date.getHours() + 100)).substr(1),
+		"mm" : ("" + (date.getMinutes() + 100)).substr(1),
+		"ss" : ("" + (date.getSeconds() + 100)).substr(1)
+	} as any;
+	return format.replace(/(yyyy|MM?|dd?|HH?|ss?|mm?)/g, function() {
+		return dict[arguments[0]];
+	});
+}
+
 export const latinNameLoopList = [
   "orderLatin",
   "suborderLatin",
@@ -81,6 +112,17 @@ function BfCard(props: Props = {} as any) {
             </div>
           </div>
           <div className="bottom-title-info">
+            <div className="picture-info">
+              <div className="pic-top">
+                <span className="icon">©</span>
+                <span className="user">{BFItem?.author}</span>
+                <span className="text">摄于</span>
+                <span className="time">{formatDate(new Date(BFItem?.createTime) || new Date() , 'yyyy-MM-dd')}</span>
+              </div>
+              <div className="pic-bottom">
+      <span className="area">{BFItem?.location}</span>
+              </div>
+            </div>
             <div className="bf-type-breadcrumb">
               <div className="ttype-name">{getName()}</div>
               <div className="type-latin-name">{getLatinName()}</div>

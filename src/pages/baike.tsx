@@ -15,7 +15,7 @@ function BaikePage(props: any) {
 
   const { data: showResult } =  useSWR(
     () =>
-    searchConfig?.[0]?.latinName ? `${host}/getSpeciesByLatinName?latinName=${searchConfig?.[0]?.latinName}` : null
+    searchConfig?.[0]?.latinName ? `${host}/getButterfliesByTypeLatinName?latinName=${searchConfig?.[0]?.latinName}` : null
   );
 
   useEffect(() => {
@@ -75,7 +75,7 @@ function BaikePage(props: any) {
         style={{ width: 300, marginRight: "2px" }}
         mode="vertical"
       >
-        {data?.children.map((child: any) => {
+        {data?.children?.[0]?.children.map((child: any) => {
           return (
             <SubMenu
               key={`${child?.value?.latinName}/${child?.value?.name}`}

@@ -128,10 +128,10 @@ function BaikeDetail(props: Props) {
         <div className="footer-content">
           {data
             ?.filter(
-              (item) =>
+              (item, index) =>
                 (searchKeContent.length === 0 ||
                   searchKeContent.includes(item.species as never)) &&
-                (!searcContent || item.name.includes(searcContent))
+                (!searcContent || item.name.includes(searcContent)) && index < 99
             )
             ?.map((item) => (
               <BfCard
